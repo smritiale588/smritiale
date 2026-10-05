@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Portfolio of Smriti Ale Magar, a UI/UX and graphic designer and design mentor with 3+ years of experience, based in Nepal.">
+<meta name="description" content="UI/UX designer, graphic designer and mentor. Portfolio of Smriti Ale Magar.">
 <meta name="theme-color" content="#ffc2d6">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="canonical" href="https://smritiale.com.np/">
@@ -11,7 +11,7 @@
 <meta property="og:description" content="UI/UX and graphic designer and design mentor based in Nepal.">
 <meta property="og:image" content="https://smritiale.com.np/smriti.png">
 <meta property="og:url" content="https://smritiale.com.np/">
-<title>Smriti Ale Magar | UI/UX Design Portfolio</title>
+<title>Smriti Ale Magar | UI/UX &amp; Graphic Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
@@ -32,9 +32,6 @@ section{padding:clamp(56px,9vw,110px) 0}
 
 /* hero */
 .hero{min-height:100svh;display:flex;flex-direction:column;background:radial-gradient(ellipse at 60% 45%,#1d1d1d,#0b0b0b 65%)}
-nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 0;font-size:.85rem;font-weight:500}
-nav a{text-decoration:none;opacity:.7;margin-left:20px}nav a:hover{opacity:1;color:var(--lime)}
-nav b{font-weight:600}nav .brand{display:flex;align-items:center;gap:10px;margin:0;opacity:1}nav .brand img{height:34px;width:auto}nav div a:first-child{margin-left:0}
 .cover{flex:1;display:flex;flex-direction:column;justify-content:center;position:relative;padding-bottom:40px}
 .kicker{font-size:clamp(1.2rem,2.6vw,2rem);font-weight:600}.kicker span{color:#777}
 .big{font-size:clamp(2.6rem,13.5vw,11rem);font-weight:800;letter-spacing:-.04em;line-height:.95;white-space:nowrap}
@@ -145,9 +142,6 @@ footer{padding:26px 0;font-size:.8rem;color:#777;border-top:1px solid #222}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 img{max-width:100%;height:auto}
 .wrap{padding-left:max(clamp(20px,5vw,56px),env(safe-area-inset-left));padding-right:max(clamp(20px,5vw,56px),env(safe-area-inset-right))}
-nav div{display:flex;flex-wrap:wrap;gap:2px 6px}
-nav a,nav div a{margin-left:0;padding:8px 8px}
-nav .brand{padding-left:0}
 .row{grid-template-columns:minmax(120px,200px) 1fr}
 .mail{overflow-wrap:anywhere}
 .tagline{max-width:min(34ch,100%)}
@@ -160,8 +154,6 @@ nav .brand{padding-left:0}
 .about{gap:28px}
 }
 @media(max-width:820px){
-nav{justify-content:center;text-align:center;padding:16px 0 8px}
-nav div{justify-content:center}
 .hero{min-height:auto}
 .cover{padding:36px 0 32px}
 .sign{margin:-.3em 2% 1.6rem 0}
@@ -215,7 +207,7 @@ nav div{justify-content:center}
 .gallery{columns:280px 3;column-gap:20px}
 .gallery figure{break-inside:avoid;margin:0 0 20px;background:#0b0b0b;color:#fff;overflow:hidden}
 .gallery figure[hidden]{display:none}
-.gallery .shot{display:block;width:100%;padding:0;border:0;background:#222;cursor:zoom-in;overflow:hidden}
+.gallery .shot{display:block;width:100%;min-height:160px;padding:0;border:0;background:#e9e6df;cursor:zoom-in;overflow:hidden}
 .gallery img{display:block;width:100%;height:auto;transition:transform .5s}
 .gallery figcaption{padding:12px 18px 18px}
 .gallery figcaption .script{display:block;color:var(--lime);font-size:2rem}
@@ -228,6 +220,184 @@ nav div{justify-content:center}
 #lb p{margin-top:12px;font-weight:600}
 .lbx{position:absolute;right:0;top:-46px;width:40px;height:40px;border-radius:50%;border:0;background:var(--lime);color:#000;font-size:1.5rem;line-height:1;cursor:pointer}
 @media(max-width:520px){.gal-filter button{padding:7px 14px;font-size:.85rem}.gallery{column-gap:0}}
+
+/* ===== no navbar + centred mobile layout ===== */
+.cover{padding-top:clamp(40px,7vw,80px)}
+@media(max-width:820px){
+.wrap{text-align:center}
+.cover{align-items:center;padding:44px 0 36px}
+.kicker,.big,.tagline{margin-left:auto;margin-right:auto;text-align:center}
+.sign{align-self:center;margin:0 0 1.4rem;transform:rotate(-5deg);transform-origin:center}
+.cta{justify-content:center}
+.sticker{position:relative;right:auto;top:auto;margin:0 auto 26px}
+.title{padding-top:0}
+.title .script{position:static;display:block;margin-bottom:-.1em;transform:rotate(-4deg)}
+.hello{text-align:center}
+.about{justify-items:center}
+.aboutlbl{margin:0 auto 8px}
+.about p,.about h3{margin-left:auto;margin-right:auto;text-align:center}
+.quote{border-left:0;border-top:3px solid var(--green);padding:14px 0 0;max-width:36ch;margin-left:auto;margin-right:auto}
+.portrait{margin:0 auto;box-shadow:0 0 0 3px #0b0b0b,0 10px 0 3px var(--lime)}
+.stats{justify-items:center;text-align:center}
+.toc{justify-items:center;text-align:center}
+.toc a{width:100%;text-align:center;padding:22px 8px 26px}
+.toc .n{position:static;display:block;font-size:3.6rem;margin-bottom:2px}
+.toc strong{padding-left:0}
+.toc .script{position:static;display:block;margin-top:4px;font-size:2rem}
+.tags,.tools,.socials,.gal-filter{justify-content:center}
+.row{text-align:center;justify-items:center}
+.row p,.row .org{margin-left:auto;margin-right:auto}
+.work article{align-items:center;text-align:center;gap:14px}
+.work .script{transform:rotate(-4deg)}
+.proj{grid-template-columns:1fr}
+.proj div,.gallery figcaption{text-align:center}
+.contact h2 .script{transform-origin:center}
+.contact p{margin-left:auto;margin-right:auto}
+.foot{flex-direction:column;align-items:center;gap:8px}
+}
+@media(max-width:520px){
+.toc{grid-template-columns:1fr}
+.stats{grid-template-columns:1fr 1fr}
+.cta{flex-direction:column;align-items:stretch;width:100%;max-width:320px}
+}
+@media(min-width:821px) and (max-width:1100px){.cover{padding-top:56px}}
+
+/* ===== premium hero + functional controls ===== */
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.big .b{padding-right:.08em;margin-right:-.08em}
+.kicker{letter-spacing:-.01em}
+.tagline{font-size:1.02rem;line-height:1.65;color:#b5b5b5}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:36px 0 0;padding:0}
+.chips li{padding:8px 16px;border:1px solid #3a3a3a;border-radius:99px;font-size:.8rem;font-weight:500;color:#d2d2d2;background:rgba(255,255,255,.04);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:border-color .2s,color .2s}
+.chips li:hover{border-color:var(--lime);color:var(--lime)}
+.btn{box-shadow:0 8px 28px rgba(255,194,214,.18);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(255,194,214,.3)}
+.btn:focus-visible,.fab a:focus-visible,.fab button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.scrollcue{position:absolute;right:0;bottom:36px;display:flex;align-items:center;gap:14px;writing-mode:vertical-rl;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:#888;text-decoration:none}
+.scrollcue::after{content:"";width:1px;height:56px;background:linear-gradient(#888,transparent);animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@keyframes rise{from{opacity:0;translate:0 24px}to{opacity:1;translate:0 0}}
+.cover>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.cover>*:nth-child(2){animation-delay:.08s}.cover>*:nth-child(3){animation-delay:.16s}.cover>*:nth-child(4){animation-delay:.24s}.cover>*:nth-child(5){animation-delay:.32s}.cover>*:nth-child(6){animation-delay:.4s}.cover>*:nth-child(7){animation-delay:.48s}
+@media(prefers-reduced-motion:reduce){.cover>*,.scrollcue::after{animation:none}}
+.progress{position:fixed;top:0;left:0;width:100%;height:3px;background:var(--lime);transform:scaleX(0);transform-origin:left;z-index:80;pointer-events:none}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab button,.fab .totop{width:52px;height:52px;border-radius:50%;border:0;background:var(--lime);color:#000;display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.35);font-size:1.25rem;text-decoration:none}
+.fab button{align-content:center;gap:5px}
+.fab button span{display:block;width:20px;height:2px;background:#000;border-radius:2px;transition:transform .25s}
+.fab button.open span:first-child{transform:translateY(3.5px) rotate(45deg)}
+.fab button.open span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+.totop{opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .25s,transform .25s}
+.totop.show{opacity:1;pointer-events:auto;transform:none}
+.fabmenu{display:flex;flex-direction:column;gap:2px;min-width:180px;padding:10px;border-radius:18px;background:rgba(14,14,14,.94);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid #333;box-shadow:0 14px 40px rgba(0,0,0,.45)}
+.fabmenu[hidden]{display:none}
+.fabmenu a{color:#fff;text-decoration:none;padding:11px 14px;border-radius:10px;font-size:.92rem;font-weight:500;text-align:left}
+.fabmenu a:hover,.fabmenu a:focus-visible{background:var(--lime);color:#000}
+@media(max-width:820px){.chips{justify-content:center;margin-top:28px}.scrollcue{display:none}.tagline{font-size:.98rem}}
+@media(max-width:520px){.chips li{padding:7px 13px;font-size:.76rem}.fab button,.fab .totop{width:48px;height:48px}}
+
+/* ===== alignment polish ===== */
+.titlebox{width:fit-content;max-width:100%}
+.titlebox .big{margin-left:-.045em}
+.titlebox .sign{display:block;white-space:nowrap;text-align:right;margin:-.3em 0 2.2rem;font-size:clamp(1.9rem,5.2vw,4.4rem);transform-origin:right center}
+.kicker{margin-bottom:.35em}
+.title,.hello,.contact h2{margin-left:-.04em}
+.title .script{left:.04em}
+h1,h2,h3,.tagline{text-wrap:balance}
+p{text-wrap:pretty}
+.about p{text-align:left;hyphens:none}
+.about{align-items:center}
+.row{align-items:baseline}
+.stats{align-items:end}
+.stats>div{display:flex;flex-direction:column;justify-content:flex-end}
+.cta .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding-top:0;padding-bottom:0}
+.work article{justify-content:flex-start;gap:16px}
+.work article>*:last-child{margin-top:auto}
+.foot{align-items:center}
+@media(max-width:820px){
+.titlebox{margin-left:auto;margin-right:auto}
+.titlebox .big{margin-left:0}
+.titlebox .sign{text-align:center;transform-origin:center;margin:-.1em 0 1.6rem}
+.title,.hello,.contact h2{margin-left:0}
+.title .script{left:auto}
+.work article>*:last-child{margin-top:0}
+.cta .btn{min-height:50px}
+}
+@media(min-width:1500px){.titlebox .sign{font-size:4.6rem}}
+
+/* ===== availability badge next to the name ===== */
+.titlebox{position:relative}
+.titlebox .sticker{position:absolute;right:-64px;bottom:-34px;top:auto;width:112px;height:112px;z-index:3;text-decoration:none;color:#000;cursor:pointer;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;animation:rise .9s .7s cubic-bezier(.2,.7,.2,1) both}
+.titlebox .sticker::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:1.5px solid var(--lime);opacity:.5;animation:ping 2.8s ease-out infinite;pointer-events:none}
+@keyframes ping{0%{transform:scale(.88);opacity:.6}80%,100%{transform:scale(1.22);opacity:0}}
+.titlebox .sticker:hover,.titlebox .sticker:focus-visible{transform:rotate(0) scale(1.08);box-shadow:0 0 0 6px #0b0b0b,0 0 0 8px var(--lime),0 14px 36px rgba(255,194,214,.35)}
+.titlebox .sticker:focus-visible{outline:2px solid #fff;outline-offset:12px}
+.titlebox .sticker:active{transform:rotate(0) scale(.96)}
+@media(prefers-reduced-motion:reduce){.titlebox .sticker,.titlebox .sticker::before{animation:none}}
+@media(max-width:1100px){.titlebox .sticker{right:-40px;width:100px;height:100px;bottom:-30px}}
+@media(max-width:820px){
+.titlebox .sticker{position:relative;right:auto;bottom:auto;margin:0 auto 26px;width:108px;height:108px}
+.titlebox .sticker::before{inset:-12px}
+}
+@media(max-width:360px){.titlebox .sticker{width:96px;height:96px}}
+@media print{.titlebox .sticker{display:none}}
+
+/* ===== desktop polish (821px and up) ===== */
+@media(min-width:1280px){html{font-size:106.25%}}
+@media(min-width:1700px){html{font-size:112.5%}.wrap{max-width:1480px}}
+.herobar{display:none}
+@media(min-width:821px){
+.herobar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;width:min(100%,940px);margin-top:clamp(36px,5vh,64px);padding-top:22px;border-top:1px solid #333;animation:rise .9s .6s cubic-bezier(.2,.7,.2,1) both}
+.herobar div{display:flex;flex-direction:column;gap:3px;min-width:0}
+.herobar small{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:#7d7d7d}
+.herobar b,.herobar a{font-size:.95rem;font-weight:600;color:#f2f2f2;text-decoration:none;overflow-wrap:anywhere}
+.herobar a{border-bottom:1.5px solid var(--lime);width:fit-content;padding-bottom:1px;transition:color .2s}
+.herobar a:hover,.herobar a:focus-visible{color:var(--lime)}
+.herobar span{font-size:.8rem;color:#9a9a9a}
+.cover{padding-bottom:56px}
+.js .rv{opacity:0;translate:0 30px;transition:opacity .8s cubic-bezier(.2,.7,.2,1),translate .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;translate:0 0}
+}
+@media(min-width:821px) and (hover:hover){
+.row{transition:background .25s,padding .25s}
+.row:hover{background:rgba(0,0,0,.04);padding-left:16px;padding-right:16px}
+.work article{transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s}
+.work article:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(0,0,0,.12);border-color:#0b0b0b}
+.stats>div{transition:transform .25s}.stats>div:hover{transform:translateY(-4px)}
+.portrait{transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+.portrait:hover{transform:rotate(-2deg) scale(1.02);box-shadow:0 0 0 3px #0b0b0b,22px 22px 0 3px var(--lime)}
+}
+@media(min-width:821px) and (max-width:1100px){.herobar{gap:20px}.herobar b,.herobar a{font-size:.88rem}}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;translate:none;transition:none}.herobar{animation:none}}
+@media print{.herobar{display:none}}
+
+/* ===== burger orb + full-screen menu + centred home ===== */
+.menu{position:fixed;inset:0;z-index:90;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(18px,4vh,40px);padding:72px 20px 32px;overflow-y:auto;background:rgba(10,10,10,.95);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);opacity:0;visibility:hidden;transition:opacity .35s,visibility 0s .35s}
+.menu.open{opacity:1;visibility:visible;transition:opacity .35s}
+.menu nav{display:flex;flex-direction:column;align-items:center;margin:auto 0}
+.menu nav a{color:#fff;text-decoration:none;font-size:clamp(1.7rem,min(6vw,6.6vh),3.6rem);font-weight:800;letter-spacing:-.04em;line-height:1.25;padding:.04em .3em;text-align:center;transition:color .2s,transform .25s;opacity:0;translate:0 18px}
+.menu.open nav a{opacity:1;translate:0 0;transition:color .2s,transform .25s,opacity .5s,translate .5s}
+.menu.open nav a:nth-child(2){transition-delay:0s,0s,.05s,.05s}.menu.open nav a:nth-child(3){transition-delay:0s,0s,.1s,.1s}.menu.open nav a:nth-child(4){transition-delay:0s,0s,.15s,.15s}.menu.open nav a:nth-child(5){transition-delay:0s,0s,.2s,.2s}.menu.open nav a:nth-child(6){transition-delay:0s,0s,.25s,.25s}.menu.open nav a:nth-child(7){transition-delay:0s,0s,.3s,.3s}.menu.open nav a:nth-child(8){transition-delay:0s,0s,.35s,.35s}
+.menu nav a i{font-style:normal;font-size:.3em;font-weight:600;letter-spacing:.1em;color:var(--lime);vertical-align:super;margin-right:.9em}
+.menu nav a:hover,.menu nav a:focus-visible{color:var(--lime);transform:scale(1.04);outline:0}
+.menumail{color:#aaa;text-decoration:none;font-size:.95rem;border-bottom:1.5px solid var(--lime);padding-bottom:2px}
+.menumail:hover,.menumail:focus-visible{color:var(--lime)}
+.menux{position:absolute;top:max(18px,env(safe-area-inset-top));right:max(18px,env(safe-area-inset-right));width:48px;height:48px;border-radius:50%;border:0;background:var(--lime);color:#000;font-size:1.7rem;line-height:1;cursor:pointer;display:grid;place-items:center}
+.menux:focus-visible,.menu a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.scrollcue{display:none}
+@media(prefers-reduced-motion:reduce){.menu,.menu.open{transition:none}.menu nav a,.menu.open nav a{transition:none;translate:none;opacity:1}}
+@media(min-width:821px){
+.cover{align-items:center;text-align:center}
+.titlebox{margin-left:auto;margin-right:auto}
+.titlebox .big{margin-left:0}
+.titlebox .sign{text-align:center;transform-origin:center;margin:-.12em 0 2.2rem}
+.cta,.chips{justify-content:center}
+.tagline{margin-left:auto;margin-right:auto}
+.herobar{margin-left:auto;margin-right:auto;text-align:center}
+.herobar div{align-items:center}
+.herobar a{margin:0 auto}
+}
 </style>
 </head>
 <body>
@@ -235,17 +405,23 @@ nav div{justify-content:center}
 <header class="hero dark grain" id="hero">
  <div class="spot" aria-hidden="true"></div>
  <div class="wrap" style="flex:1;display:flex;flex-direction:column">
-  <nav>
-   <a class="brand" href="#hero"><img src="logo-white.png" alt="" width="26" height="34"><b>Smriti Ale Magar</b></a>
-   <div><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#process">Process</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#work">Work</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
-  </nav>
   <div class="cover">
-   <div class="kicker">UI/UX <span>Design</span></div>
-   <h1 class="big" aria-label="Portfolio"><span class="a">Portf</span><span class="orb" aria-hidden="true"></span><span class="b">lio</span></h1>
-   <div class="sign script">Smriti Ale Magar</div>
-   <p class="tagline">UI/UX designer and mentor. I turn complex ideas into clear, usable products, and help new designers do the same.</p>
+   <div class="kicker">UI/UX <span>&amp;</span> Graphic <span>Designer</span></div>
+   <div class="titlebox">
+    <h1 class="big" aria-label="Portfolio"><span class="a">Portf</span><span class="orb" aria-hidden="true"></span><span class="b">lio</span></h1>
+    <div class="sign script">Smriti Ale Magar</div>
+    <a class="sticker" href="#contact" aria-label="Open for freelance and collabs. Get in touch"><div><span>Open</span>for freelance<br>&amp; collabs</div></a>
+   </div>
+   <p class="tagline">UI/UX and graphic designer, and mentor. I turn complex ideas into clear, usable products and memorable visuals, and help new designers do the same.</p>
    <div class="cta"><a class="btn" href="#work">View my work</a><a class="btn ghost" href="#contact">Get in touch</a></div>
-   <div class="sticker"><div><span>Open</span>for freelance<br>&amp; collabs</div></div>
+   <ul class="chips" aria-label="What I do"><li>UI/UX Design</li><li>Graphic Design</li><li>Brand Identity</li><li>Social Media Design</li><li>Design Mentoring</li></ul>
+   <div class="herobar">
+    <div><small>Currently</small><b>UI/UX &amp; Graphics Designer</b><span>CODE IT, Dharan, Nepal</span></div>
+    <div><small>Focus</small><b>Interfaces, brand visuals</b><span>and mentoring new designers</span></div>
+    <div><small>Say hello</small><a href="mailto:smritiale60@gmail.com">smritiale60@gmail.com</a><span>Open for freelance &amp; collabs</span></div>
+   </div>
+   <a class="scrollcue" href="#about" aria-label="Scroll to about">Scroll</a>
+   
   </div>
  </div>
 </header>
@@ -363,6 +539,10 @@ nav div{justify-content:center}
  </div>
 </section>
 
+<script>
+function imgFix(i){var o=i.dataset.orig,t=+i.dataset.try||0;i.dataset.try=t+1;
+if(t===0)i.src='projects/'+o;else if(t===1)i.src=o;else i.onerror=null;}
+</script>
 <section id="projects" class="grain" style="padding-top:0">
  <div class="wrap">
   <h2 class="title"><span class="script">Selected</span>Design Projects</h2>
@@ -373,15 +553,15 @@ nav div{justify-content:center}
    <button type="button" data-f="poster" aria-pressed="false">Posters &amp; ads</button>
   </div>
   <div class="gallery">
-   <figure data-cat="social"><button class="shot" type="button" data-full="projects/01-webinar.jpg" data-title="AWS Cloud Practitioner Webinar" aria-label="View Live webinar poster for the AWS Cloud Practitioner course"><img src="projects/01-webinar.jpg" width="1200" height="1200" alt="Live webinar poster for the AWS Cloud Practitioner course" loading="lazy"></button><figcaption><span class="script">Webinar</span><h3>AWS Cloud Practitioner Webinar</h3><p>Event poster · CODE IT</p></figcaption></figure>
-   <figure data-cat="brand"><button class="shot" type="button" data-full="projects/02-brew-and-beans-logo.jpg" data-title="Brew &amp;amp; Beans" aria-label="View Circular logo for Brew and Beans coffee shop"><img src="projects/02-brew-and-beans-logo.jpg" width="1200" height="1200" alt="Circular logo for Brew and Beans coffee shop" loading="lazy"></button><figcaption><span class="script">Logo</span><h3>Brew &amp; Beans</h3><p>Logo design · Coffee shop</p></figcaption></figure>
-   <figure data-cat="social"><button class="shot" type="button" data-full="projects/03-constitution-day.jpg" data-title="Constitution Day 2083" aria-label="View Constitution Day 2083 greeting post with flag and parliament building"><img src="projects/03-constitution-day.jpg" width="1200" height="1200" alt="Constitution Day 2083 greeting post with flag and parliament building" loading="lazy"></button><figcaption><span class="script">Festival</span><h3>Constitution Day 2083</h3><p>Social media post · CODE IT</p></figcaption></figure>
-   <figure data-cat="social"><button class="shot" type="button" data-full="projects/04-fathers-day.jpg" data-title="Father&#x27;s Day Greeting" aria-label="View Father's Day post with mice as eyes and a keyboard mustache"><img src="projects/04-fathers-day.jpg" width="1200" height="1200" alt="Father's Day post with mice as eyes and a keyboard mustache" loading="lazy"></button><figcaption><span class="script">Greeting</span><h3>Father's Day Greeting</h3><p>Social media post · CODE IT</p></figcaption></figure>
-   <figure data-cat="poster"><button class="shot" type="button" data-full="projects/05-karmacharya-jewellery.jpg" data-title="Karmacharya &amp;amp; Son&#x27;s" aria-label="View Gold jewellery advertisement on a red velvet bust"><img src="projects/05-karmacharya-jewellery.jpg" width="1200" height="1200" alt="Gold jewellery advertisement on a red velvet bust" loading="lazy"></button><figcaption><span class="script">Luxury</span><h3>Karmacharya &amp; Son's</h3><p>Jewellery advertisement</p></figcaption></figure>
-   <figure data-cat="poster"><button class="shot" type="button" data-full="projects/06-grand-opening.jpg" data-title="Grand Opening: Bean &amp;amp; Brew" aria-label="View Grand opening flyer for Bean and Brew coffee shop"><img src="projects/06-grand-opening.jpg" width="1131" height="1600" alt="Grand opening flyer for Bean and Brew coffee shop" loading="lazy"></button><figcaption><span class="script">Flyer</span><h3>Grand Opening: Bean &amp; Brew</h3><p>Flyer · Coffee shop</p></figcaption></figure>
-   <figure data-cat="poster"><button class="shot" type="button" data-full="projects/07-summer-refresh.jpg" data-title="Summer Refresh Collection" aria-label="View Summer drinks promotional poster with three cocktails"><img src="projects/07-summer-refresh.jpg" width="1080" height="1080" alt="Summer drinks promotional poster with three cocktails" loading="lazy"></button><figcaption><span class="script">Promo</span><h3>Summer Refresh Collection</h3><p>Promo poster · FreshSip Café</p></figcaption></figure>
-   <figure data-cat="poster"><button class="shot" type="button" data-full="projects/08-shapes.jpg" data-title="SHAPES" aria-label="View Geometric abstract poster about shapes"><img src="projects/08-shapes.jpg" width="1200" height="1200" alt="Geometric abstract poster about shapes" loading="lazy"></button><figcaption><span class="script">Poster</span><h3>SHAPES</h3><p>Geometric poster</p></figcaption></figure>
-   <figure data-cat="social"><button class="shot" type="button" data-full="projects/09-dessert-menu.jpg" data-title="Special Dessert Menu" aria-label="View Dessert menu advertisement with cheesecake and raspberries"><img src="projects/09-dessert-menu.jpg" width="1080" height="1080" alt="Dessert menu advertisement with cheesecake and raspberries" loading="lazy"></button><figcaption><span class="script">Menu</span><h3>Special Dessert Menu</h3><p>Social media ad · Food</p></figcaption></figure>
+   <figure data-cat="social"><button class="shot" type="button" data-full="projects/01-webinar.jpg" data-title="AWS Cloud Practitioner Webinar" aria-label="View Live webinar poster for the AWS Cloud Practitioner course"><img src="projects/01-webinar.jpg" data-orig="Webinar.png" onerror="imgFix(this)" width="1200" height="1200" alt="Live webinar poster for the AWS Cloud Practitioner course" loading="lazy"></button><figcaption><span class="script">Webinar</span><h3>AWS Cloud Practitioner Webinar</h3><p>Event poster · CODE IT</p></figcaption></figure>
+   <figure data-cat="brand"><button class="shot" type="button" data-full="projects/02-brew-and-beans-logo.jpg" data-title="Brew &amp;amp; Beans" aria-label="View Circular logo for Brew and Beans coffee shop"><img src="projects/02-brew-and-beans-logo.jpg" data-orig="b_B_logo.png" onerror="imgFix(this)" width="1200" height="1200" alt="Circular logo for Brew and Beans coffee shop" loading="lazy"></button><figcaption><span class="script">Logo</span><h3>Brew &amp; Beans</h3><p>Logo design · Coffee shop</p></figcaption></figure>
+   <figure data-cat="social"><button class="shot" type="button" data-full="projects/03-constitution-day.jpg" data-title="Constitution Day 2083" aria-label="View Constitution Day 2083 greeting post with flag and parliament building"><img src="projects/03-constitution-day.jpg" data-orig="brand_indentity_basic_2.png" onerror="imgFix(this)" width="1200" height="1200" alt="Constitution Day 2083 greeting post with flag and parliament building" loading="lazy"></button><figcaption><span class="script">Festival</span><h3>Constitution Day 2083</h3><p>Social media post · CODE IT</p></figcaption></figure>
+   <figure data-cat="social"><button class="shot" type="button" data-full="projects/04-fathers-day.jpg" data-title="Father&#x27;s Day Greeting" aria-label="View Father's Day post with mice as eyes and a keyboard mustache"><img src="projects/04-fathers-day.jpg" data-orig="brand_indentity_basic.png" onerror="imgFix(this)" width="1200" height="1200" alt="Father's Day post with mice as eyes and a keyboard mustache" loading="lazy"></button><figcaption><span class="script">Greeting</span><h3>Father's Day Greeting</h3><p>Social media post · CODE IT</p></figcaption></figure>
+   <figure data-cat="poster"><button class="shot" type="button" data-full="projects/05-karmacharya-jewellery.jpg" data-title="Karmacharya &amp;amp; Son&#x27;s" aria-label="View Gold jewellery advertisement on a red velvet bust"><img src="projects/05-karmacharya-jewellery.jpg" data-orig="2.png" onerror="imgFix(this)" width="1200" height="1200" alt="Gold jewellery advertisement on a red velvet bust" loading="lazy"></button><figcaption><span class="script">Luxury</span><h3>Karmacharya &amp; Son's</h3><p>Jewellery advertisement</p></figcaption></figure>
+   <figure data-cat="poster"><button class="shot" type="button" data-full="projects/06-grand-opening.jpg" data-title="Grand Opening: Bean &amp;amp; Brew" aria-label="View Grand opening flyer for Bean and Brew coffee shop"><img src="projects/06-grand-opening.jpg" data-orig="Grand_Opening.png" onerror="imgFix(this)" width="1131" height="1600" alt="Grand opening flyer for Bean and Brew coffee shop" loading="lazy"></button><figcaption><span class="script">Flyer</span><h3>Grand Opening: Bean &amp; Brew</h3><p>Flyer · Coffee shop</p></figcaption></figure>
+   <figure data-cat="poster"><button class="shot" type="button" data-full="projects/07-summer-refresh.jpg" data-title="Summer Refresh Collection" aria-label="View Summer drinks promotional poster with three cocktails"><img src="projects/07-summer-refresh.jpg" data-orig="i.png" onerror="imgFix(this)" width="1080" height="1080" alt="Summer drinks promotional poster with three cocktails" loading="lazy"></button><figcaption><span class="script">Promo</span><h3>Summer Refresh Collection</h3><p>Promo poster · FreshSip Café</p></figcaption></figure>
+   <figure data-cat="poster"><button class="shot" type="button" data-full="projects/08-shapes.jpg" data-title="SHAPES" aria-label="View Geometric abstract poster about shapes"><img src="projects/08-shapes.jpg" data-orig="shapes.png" onerror="imgFix(this)" width="1200" height="1200" alt="Geometric abstract poster about shapes" loading="lazy"></button><figcaption><span class="script">Poster</span><h3>SHAPES</h3><p>Geometric poster</p></figcaption></figure>
+   <figure data-cat="social"><button class="shot" type="button" data-full="projects/09-dessert-menu.jpg" data-title="Special Dessert Menu" aria-label="View Dessert menu advertisement with cheesecake and raspberries"><img src="projects/09-dessert-menu.jpg" data-orig="rasberry_post_copy.jpg" onerror="imgFix(this)" width="1080" height="1080" alt="Dessert menu advertisement with cheesecake and raspberries" loading="lazy"></button><figcaption><span class="script">Menu</span><h3>Special Dessert Menu</h3><p>Social media ad · Food</p></figcaption></figure>
   </div>
  </div>
 </section>
@@ -424,10 +604,56 @@ nav div{justify-content:center}
   var lb=document.getElementById('lb');if(!lb||!lb.showModal)return;
   var li=lb.querySelector('img'),lp=lb.querySelector('p');
   document.querySelectorAll('.shot').forEach(function(s){s.addEventListener('click',function(){
-    li.src=s.dataset.full;li.alt=s.querySelector('img').alt;lp.textContent=s.dataset.title;lb.showModal();
+    li.src=s.querySelector('img').currentSrc||s.dataset.full;li.alt=s.querySelector('img').alt;lp.textContent=s.dataset.title;lb.showModal();
   })});
   lb.querySelector('.lbx').addEventListener('click',function(){lb.close()});
   lb.addEventListener('click',function(e){if(e.target===lb||e.target===li)lb.close()});
+})();
+
+
+
+(function(){
+  if(!window.matchMedia||!matchMedia('(min-width:821px)').matches||matchMedia('(prefers-reduced-motion:reduce)').matches||!('IntersectionObserver' in window))return;
+  var d=document.documentElement;d.classList.add('js');
+  var els=document.querySelectorAll('section .title,.about,.stats,.toc,.row,.work article,.gallery figure,.gal-filter,.contact .wrap>*');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(el,i){el.classList.add('rv');el.style.transitionDelay=(i%3)*70+'ms';io.observe(el)});
+  setTimeout(function(){els.forEach(function(el){if(!el.classList.contains('in')){var r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.add('in')}})},1500);
+})();
+</script>
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true">
+ <button type="button" class="menux" aria-label="Close menu">&times;</button>
+ <nav aria-label="Sections"><a href="#about"><i>01</i>About</a><a href="#expertise"><i>02</i>Expertise</a><a href="#process"><i>03</i>Process</a><a href="#experience"><i>04</i>Experience</a><a href="#education"><i>05</i>Education</a><a href="#work"><i>06</i>Work</a><a href="#projects"><i>07</i>Projects</a><a href="#contact"><i>08</i>Contact</a></nav>
+ <a class="menumail" href="mailto:smritiale60@gmail.com">smritiale60@gmail.com</a>
+</div>
+<div class="progress" id="prog" aria-hidden="true"></div>
+<div class="fab" id="fab">
+ <a class="totop" id="totop" href="#hero" aria-label="Back to top">&#8593;</a>
+ <button type="button" id="fabbtn" aria-expanded="false" aria-controls="menu" aria-haspopup="dialog" aria-label="Open menu"><span></span><span></span></button>
+</div>
+<script>
+(function(){
+  var prog=document.getElementById('prog'),fab=document.getElementById('fab'),top=document.getElementById('totop'),fbtn=document.getElementById('fabbtn'),
+      orb=document.getElementById('orb'),menu=document.getElementById('menu'),root=document.documentElement,tick=false,opener=null;
+  function upd(){var max=root.scrollHeight-root.clientHeight,y=window.scrollY||root.scrollTop;
+    prog.style.transform='scaleX('+(max>0?Math.min(1,y/max):0)+')';
+    top.classList.toggle('show',y>600);fab.classList.toggle('scrolled',y>420);tick=false}
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  var close=menu.querySelector('.menux');
+  function open(from){opener=from||null;menu.classList.add('open');menu.setAttribute('aria-hidden','false');
+    root.style.overflow='hidden';[orb,fbtn].forEach(function(b){b&&b.setAttribute('aria-expanded','true')});close.focus()}
+  function shut(){if(!menu.classList.contains('open'))return;menu.classList.remove('open');menu.setAttribute('aria-hidden','true');
+    root.style.overflow='';[orb,fbtn].forEach(function(b){b&&b.setAttribute('aria-expanded','false')});if(opener)opener.focus()}
+  if(orb){orb.addEventListener('click',function(){open(orb)});
+    orb.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(orb)}})}
+  fbtn.addEventListener('click',function(){open(fbtn)});
+  close.addEventListener('click',shut);
+  menu.addEventListener('click',function(e){if(e.target===menu||e.target.closest('nav a'))shut()});
+  document.addEventListener('keydown',function(e){
+    if(!menu.classList.contains('open'))return;
+    if(e.key==='Escape'){shut();return}
+    if(e.key==='Tab'){var f=menu.querySelectorAll('a,button');if(!f.length)return;var a=f[0],z=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}});
 })();
 </script>
 </body>
